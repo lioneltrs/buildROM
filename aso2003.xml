@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<mame>
+	<game name="aso">
+		<description>ASO - Armored Scrum Object</description>
+		<year>1985</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="aso.1" size="32768" crc="3fc9d5e4" sha1="1318904d3d896affd5affd8e475ac9ee6929b955" region="cpu1" offset="0"/>
+		<rom name="aso.3" size="16384" crc="39a666d2" sha1="b5426520eb600d44bc5566d742d7b88194076494" region="cpu1" offset="8000"/>
+		<rom name="aso.4" size="32768" crc="2429792b" sha1="674e81880f359f7e8d34d0ad9074267360afadbf" region="cpu2" offset="0"/>
+		<rom name="aso.6" size="16384" crc="c0bfdf1f" sha1="65b15ce9c2e78df79cb603c58639421d29701633" region="cpu2" offset="8000"/>
+		<rom name="aso.7" size="32768" crc="49258162" sha1="c265b79d012be1e065389f910f7b4ce61f5b27ce" region="cpu3" offset="0"/>
+		<rom name="aso.9" size="16384" crc="aef5a4f4" sha1="e908e79e27ff892fe75d1ba5cb0bc9dc6b7b4268" region="cpu3" offset="8000"/>
+		<rom name="aso.14" size="8192" crc="8baa2253" sha1="e6e4a5aa005e89744c4e2a19a080cf322edc6b52" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="aso.10" size="32768" crc="00dff996" sha1="4f6ce4c0f2da0d2a711bcbf9aa998b4e31d0d9bf" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="aso.11" size="32768" crc="7feac86c" sha1="13b81f006ec587583416c1e7432da4c3f0375924" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="aso.12" size="32768" crc="6895990b" sha1="e84554cae9a768021c3dc7183bc3d28e2dd768ee" region="gfx3" dispose="yes" offset="8000"/>
+		<rom name="aso.13" size="32768" crc="87a81ce1" sha1="28c1069e6c08ecd579f99620c1cb6df01ad1aa74" region="gfx3" dispose="yes" offset="10000"/>
+		<rom name="up02_f12.rom" size="1024" crc="5b0a0059" sha1="f61e17c8959f1cd6cc12b38f2fb7c6190ebd0e0c" region="proms" offset="0"/>
+		<rom name="up02_f13.rom" size="1024" crc="37e28dd8" sha1="681726e490872a574dd0295823a44d64ef3a7b45" region="proms" offset="400"/>
+		<rom name="up02_f14.rom" size="1024" crc="c3fd1dd3" sha1="c48030cc458f0bebea0ffccf3d3c43260da6a7fb" region="proms" offset="800"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="216" height="288" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="joy8way" buttons="3" coins="2"/>
+		<dipswitch name="Allow Continue">
+			<dipvalue name="No" default="yes"/>
+			<dipvalue name="Yes"/>
+		</dipswitch>
+		<dipswitch name="Cabinet">
+			<dipvalue name="Upright" default="yes"/>
+			<dipvalue name="Cocktail"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coinage">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+			<dipvalue name="1 Coin/2 Credits"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="50k 100k" default="yes"/>
+			<dipvalue name="60k 120k"/>
+			<dipvalue name="100k 200k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; every 2nd" default="yes"/>
+			<dipvalue name="1st &amp; 2nd only"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy" default="yes"/>
+			<dipvalue name="Normal"/>
+			<dipvalue name="Hard"/>
+			<dipvalue name="Hardest"/>
+		</dipswitch>
+		<dipswitch name="Demo Sounds">
+			<dipvalue name="Off"/>
+			<dipvalue name="On" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Cheat of some kind">
+		</dipswitch>
+		<dipswitch name="Flip Screen">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Start Area">
+			<dipvalue name="1" default="yes"/>
+			<dipvalue name="2"/>
+			<dipvalue name="3"/>
+			<dipvalue name="4"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+</mame>	
