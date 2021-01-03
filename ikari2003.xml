@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<mame>
+	<game name="ikari">
+		<description>Ikari Warriors (US)</description>
+		<year>1986</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="1.rom" size="65536" crc="52a8b2dd" sha1="a896387d68ed9a55c313bdb81acdf8d68b7a1264" region="cpu1" offset="0"/>
+		<rom name="2.rom" size="65536" crc="45364d55" sha1="323b998f782a4681ceb18016c5fb0fa1d6361aac" region="cpu2" offset="0"/>
+		<rom name="3.rom" size="65536" crc="56a26699" sha1="e9ccb27f1e711e4648fdfe3c7ff956038d3e101c" region="cpu3" offset="0"/>
+		<rom name="7122er.prm" size="1024" crc="b9bf2c2c" sha1="8eb62152dcb04f463baf6ec2a66148eb947403ef" region="proms" offset="0"/>
+		<rom name="7122eg.prm" size="1024" crc="0703a770" sha1="62861ef4987003d4965ef5018ccdf7157981d939" region="proms" offset="400"/>
+		<rom name="7122eb.prm" size="1024" crc="0a11cdde" sha1="faae17398341317e7afbd06b903b8e9e65967bf1" region="proms" offset="800"/>
+		<rom name="7.rom" size="16384" crc="a7eb4917" sha1="6c07323cc243df4c5c30bc0daedbff3887309f65" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="17.rom" size="32768" crc="e0dba976" sha1="5a8f14f7a199b5fb1862debda0bceee42cddac59" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="18.rom" size="32768" crc="24947d5f" sha1="ffd18074ced8171c9da56c839e8289afc29af2c9" region="gfx2" dispose="yes" offset="8000"/>
+		<rom name="19.rom" size="32768" crc="9ee59e91" sha1="fe51d13ab73cb596a233669e304b2be66f9becae" region="gfx2" dispose="yes" offset="10000"/>
+		<rom name="20.rom" size="32768" crc="5da7ec1a" sha1="4b212c1dfe4c18eced90ee3a783e7edf8d23c906" region="gfx2" dispose="yes" offset="18000"/>
+		<rom name="8.rom" size="32768" crc="9827c14a" sha1="b54dcee95c6f6e46c187a117b4e7aaf1c0ece6c6" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="9.rom" size="32768" crc="545c790c" sha1="7738738f4a1343b04efd029ecaefac74010451f0" region="gfx3" dispose="yes" offset="8000"/>
+		<rom name="10.rom" size="32768" crc="ec9ba07e" sha1="6b492b2cd7b8cca948ce39c3450f1cc153f41d90" region="gfx3" dispose="yes" offset="10000"/>
+		<rom name="11.rom" size="32768" crc="5c75ea8f" sha1="4e8ee56a2dbeb9ac2dd74bc584dba29433d91ae0" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="14.rom" size="32768" crc="3293fde4" sha1="3e2f0fa00c22f1c0c1427d8d3de57dd9ec7682a9" region="gfx4" dispose="yes" offset="8000"/>
+		<rom name="12.rom" size="32768" crc="95138498" sha1="8ac3d2cd793312434b9ffb8c47c30473f713e0e8" region="gfx4" dispose="yes" offset="10000"/>
+		<rom name="15.rom" size="32768" crc="65a61c99" sha1="767694c919180de208b6211b593db68fc5a66ff1" region="gfx4" dispose="yes" offset="18000"/>
+		<rom name="13.rom" size="32768" crc="315383d7" sha1="1c1c5931e3447c4dcbd54fc8ae383b03cb5fbf5b" region="gfx4" dispose="yes" offset="20000"/>
+		<rom name="16.rom" size="32768" crc="e9b03e07" sha1="124e5328a965ea2af28c4d74934a82394a2ffd72" region="gfx4" dispose="yes" offset="28000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="216" height="288" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="dial" buttons="2" coins="2"/>
+		<dipswitch name="Allow killing each other">
+			<dipvalue name="No" default="yes"/>
+			<dipvalue name="Yes"/>
+		</dipswitch>
+		<dipswitch name="P1 &amp; P2 Fire Buttons">
+			<dipvalue name="Separate" default="yes"/>
+			<dipvalue name="Common"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; every 2nd" default="yes"/>
+			<dipvalue name="1st &amp; 2nd only"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coin A">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Coin B">
+			<dipvalue name="1 Coin/2 Credits" default="yes"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy"/>
+			<dipvalue name="Normal" default="yes"/>
+			<dipvalue name="Hard"/>
+			<dipvalue name="Hardest"/>
+		</dipswitch>
+		<dipswitch name="Game Mode">
+			<dipvalue name="Demo Sounds Off"/>
+			<dipvalue name="Demo Sounds On" default="yes"/>
+			<dipvalue name="Freeze"/>
+			<dipvalue name="Infinite Lives"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="50k 100k" default="yes"/>
+			<dipvalue name="60k 120k"/>
+			<dipvalue name="100k 200k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Unused">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Allow Continue">
+			<dipvalue name="No"/>
+			<dipvalue name="Yes" default="yes"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+	<game name="ikarijp" cloneof="ikari" romof="ikari">
+		<description>Ikari (Japan)</description>
+		<year>1986</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="up03_l4.rom" size="16384" crc="cde006be" sha1="a42e23659cf0ea5194f8a7a9a1679ebcaed75ead" region="cpu1" offset="0"/>
+		<rom name="up03_k4.rom" size="32768" crc="26948850" sha1="bfeba5f7019f6eaacf2a5464756d9cb283c5f5a2" region="cpu1" offset="4000"/>
+		<rom name="ik3" size="16384" crc="9bb385f8" sha1="70cc30bece54c28205017e755dc32a1c088f9f80" region="cpu2" offset="0"/>
+		<rom name="ik4" size="32768" crc="3a144bca" sha1="c1b09bffb8d89e607332304b1d8845794f25273f" region="cpu2" offset="4000"/>
+		<rom name="ik5" size="16384" crc="863448fa" sha1="19cad05dc9c4495f36e0d8627927ea6d0a971824" region="cpu3" offset="0"/>
+		<rom name="ik6" size="32768" crc="9b16aa57" sha1="69866ce41c587721702c92ac2e9ba3f6645004cf" region="cpu3" offset="4000"/>
+		<rom name="7122er.prm" merge="7122er.prm" size="1024" crc="b9bf2c2c" sha1="8eb62152dcb04f463baf6ec2a66148eb947403ef" region="proms" offset="0"/>
+		<rom name="7122eg.prm" merge="7122eg.prm" size="1024" crc="0703a770" sha1="62861ef4987003d4965ef5018ccdf7157981d939" region="proms" offset="400"/>
+		<rom name="7122eb.prm" merge="7122eb.prm" size="1024" crc="0a11cdde" sha1="faae17398341317e7afbd06b903b8e9e65967bf1" region="proms" offset="800"/>
+		<rom name="ik7" size="16384" crc="9e88f536" sha1="80e9aadeb626e60318a2139fd1b3875f6256c492" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="17.rom" merge="17.rom" size="32768" crc="e0dba976" sha1="5a8f14f7a199b5fb1862debda0bceee42cddac59" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="18.rom" merge="18.rom" size="32768" crc="24947d5f" sha1="ffd18074ced8171c9da56c839e8289afc29af2c9" region="gfx2" dispose="yes" offset="8000"/>
+		<rom name="ik19" size="32768" crc="566242ec" sha1="ca25587460491597d462d2526d59afbc9b92fb75" region="gfx2" dispose="yes" offset="10000"/>
+		<rom name="20.rom" merge="20.rom" size="32768" crc="5da7ec1a" sha1="4b212c1dfe4c18eced90ee3a783e7edf8d23c906" region="gfx2" dispose="yes" offset="18000"/>
+		<rom name="ik8" size="32768" crc="75d796d0" sha1="395c1d22b935c92c50a326edc8b6cd9aab235f7c" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="ik9" size="32768" crc="2c34903b" sha1="1949fc0cef4b30665ad288fa8e506a05741face0" region="gfx3" dispose="yes" offset="8000"/>
+		<rom name="ik10" size="32768" crc="da9ccc94" sha1="be3c9d44a887ac823039153b832dfae18fe69965" region="gfx3" dispose="yes" offset="10000"/>
+		<rom name="11.rom" merge="11.rom" size="32768" crc="5c75ea8f" sha1="4e8ee56a2dbeb9ac2dd74bc584dba29433d91ae0" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="14.rom" merge="14.rom" size="32768" crc="3293fde4" sha1="3e2f0fa00c22f1c0c1427d8d3de57dd9ec7682a9" region="gfx4" dispose="yes" offset="8000"/>
+		<rom name="12.rom" merge="12.rom" size="32768" crc="95138498" sha1="8ac3d2cd793312434b9ffb8c47c30473f713e0e8" region="gfx4" dispose="yes" offset="10000"/>
+		<rom name="15.rom" merge="15.rom" size="32768" crc="65a61c99" sha1="767694c919180de208b6211b593db68fc5a66ff1" region="gfx4" dispose="yes" offset="18000"/>
+		<rom name="13.rom" merge="13.rom" size="32768" crc="315383d7" sha1="1c1c5931e3447c4dcbd54fc8ae383b03cb5fbf5b" region="gfx4" dispose="yes" offset="20000"/>
+		<rom name="16.rom" merge="16.rom" size="32768" crc="e9b03e07" sha1="124e5328a965ea2af28c4d74934a82394a2ffd72" region="gfx4" dispose="yes" offset="28000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="216" height="288" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="dial" buttons="2" coins="2"/>
+		<dipswitch name="Allow killing each other">
+			<dipvalue name="No" default="yes"/>
+			<dipvalue name="Yes"/>
+		</dipswitch>
+		<dipswitch name="P1 &amp; P2 Fire Buttons">
+			<dipvalue name="Separate" default="yes"/>
+			<dipvalue name="Common"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; every 2nd" default="yes"/>
+			<dipvalue name="1st &amp; 2nd only"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coin A">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Coin B">
+			<dipvalue name="1 Coin/2 Credits" default="yes"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy"/>
+			<dipvalue name="Normal" default="yes"/>
+			<dipvalue name="Hard"/>
+			<dipvalue name="Hardest"/>
+		</dipswitch>
+		<dipswitch name="Game Mode">
+			<dipvalue name="Demo Sounds Off"/>
+			<dipvalue name="Demo Sounds On" default="yes"/>
+			<dipvalue name="Freeze"/>
+			<dipvalue name="Infinite Lives"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="50k 100k" default="yes"/>
+			<dipvalue name="60k 120k"/>
+			<dipvalue name="100k 200k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Unused">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+	<game name="ikarijpb" cloneof="ikari" romof="ikari">
+		<description>Ikari (Japan bootleg)</description>
+		<year>1986</year>
+		<manufacturer>bootleg</manufacturer>
+		<rom name="ik1" size="16384" crc="2ef87dce" sha1="4b52567fee81018f7a4b33bac79ea521c7d19d52" region="cpu1" offset="0"/>
+		<rom name="up03_k4.rom" size="32768" crc="26948850" sha1="bfeba5f7019f6eaacf2a5464756d9cb283c5f5a2" region="cpu1" offset="4000"/>
+		<rom name="ik3" size="16384" crc="9bb385f8" sha1="70cc30bece54c28205017e755dc32a1c088f9f80" region="cpu2" offset="0"/>
+		<rom name="ik4" size="32768" crc="3a144bca" sha1="c1b09bffb8d89e607332304b1d8845794f25273f" region="cpu2" offset="4000"/>
+		<rom name="ik5" size="16384" crc="863448fa" sha1="19cad05dc9c4495f36e0d8627927ea6d0a971824" region="cpu3" offset="0"/>
+		<rom name="ik6" size="32768" crc="9b16aa57" sha1="69866ce41c587721702c92ac2e9ba3f6645004cf" region="cpu3" offset="4000"/>
+		<rom name="7122er.prm" merge="7122er.prm" size="1024" crc="b9bf2c2c" sha1="8eb62152dcb04f463baf6ec2a66148eb947403ef" region="proms" offset="0"/>
+		<rom name="7122eg.prm" merge="7122eg.prm" size="1024" crc="0703a770" sha1="62861ef4987003d4965ef5018ccdf7157981d939" region="proms" offset="400"/>
+		<rom name="7122eb.prm" merge="7122eb.prm" size="1024" crc="0a11cdde" sha1="faae17398341317e7afbd06b903b8e9e65967bf1" region="proms" offset="800"/>
+		<rom name="ik7" size="16384" crc="9e88f536" sha1="80e9aadeb626e60318a2139fd1b3875f6256c492" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="17.rom" merge="17.rom" size="32768" crc="e0dba976" sha1="5a8f14f7a199b5fb1862debda0bceee42cddac59" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="18.rom" merge="18.rom" size="32768" crc="24947d5f" sha1="ffd18074ced8171c9da56c839e8289afc29af2c9" region="gfx2" dispose="yes" offset="8000"/>
+		<rom name="ik19" size="32768" crc="566242ec" sha1="ca25587460491597d462d2526d59afbc9b92fb75" region="gfx2" dispose="yes" offset="10000"/>
+		<rom name="20.rom" merge="20.rom" size="32768" crc="5da7ec1a" sha1="4b212c1dfe4c18eced90ee3a783e7edf8d23c906" region="gfx2" dispose="yes" offset="18000"/>
+		<rom name="ik8" size="32768" crc="75d796d0" sha1="395c1d22b935c92c50a326edc8b6cd9aab235f7c" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="ik9" size="32768" crc="2c34903b" sha1="1949fc0cef4b30665ad288fa8e506a05741face0" region="gfx3" dispose="yes" offset="8000"/>
+		<rom name="ik10" size="32768" crc="da9ccc94" sha1="be3c9d44a887ac823039153b832dfae18fe69965" region="gfx3" dispose="yes" offset="10000"/>
+		<rom name="11.rom" merge="11.rom" size="32768" crc="5c75ea8f" sha1="4e8ee56a2dbeb9ac2dd74bc584dba29433d91ae0" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="14.rom" merge="14.rom" size="32768" crc="3293fde4" sha1="3e2f0fa00c22f1c0c1427d8d3de57dd9ec7682a9" region="gfx4" dispose="yes" offset="8000"/>
+		<rom name="12.rom" merge="12.rom" size="32768" crc="95138498" sha1="8ac3d2cd793312434b9ffb8c47c30473f713e0e8" region="gfx4" dispose="yes" offset="10000"/>
+		<rom name="15.rom" merge="15.rom" size="32768" crc="65a61c99" sha1="767694c919180de208b6211b593db68fc5a66ff1" region="gfx4" dispose="yes" offset="18000"/>
+		<rom name="13.rom" merge="13.rom" size="32768" crc="315383d7" sha1="1c1c5931e3447c4dcbd54fc8ae383b03cb5fbf5b" region="gfx4" dispose="yes" offset="20000"/>
+		<rom name="16.rom" merge="16.rom" size="32768" crc="e9b03e07" sha1="124e5328a965ea2af28c4d74934a82394a2ffd72" region="gfx4" dispose="yes" offset="28000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="216" height="288" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="dial" buttons="2" coins="2"/>
+		<dipswitch name="Allow killing each other">
+			<dipvalue name="No" default="yes"/>
+			<dipvalue name="Yes"/>
+		</dipswitch>
+		<dipswitch name="P1 &amp; P2 Fire Buttons">
+			<dipvalue name="Separate" default="yes"/>
+			<dipvalue name="Common"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; every 2nd" default="yes"/>
+			<dipvalue name="1st &amp; 2nd only"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coin A">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Coin B">
+			<dipvalue name="1 Coin/2 Credits" default="yes"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy"/>
+			<dipvalue name="Normal" default="yes"/>
+			<dipvalue name="Hard"/>
+			<dipvalue name="Hardest"/>
+		</dipswitch>
+		<dipswitch name="Game Mode">
+			<dipvalue name="Demo Sounds Off"/>
+			<dipvalue name="Demo Sounds On" default="yes"/>
+			<dipvalue name="Freeze"/>
+			<dipvalue name="Infinite Lives"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="50k 100k" default="yes"/>
+			<dipvalue name="60k 120k"/>
+			<dipvalue name="100k 200k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Unused">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+</mame>	
