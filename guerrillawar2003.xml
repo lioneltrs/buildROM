@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<mame>
+	<game name="gwar">
+		<description>Guerrilla War (US)</description>
+		<year>1987</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="7g" size="65536" crc="5bcfa7dc" sha1="1af2c36df287c9c84be8e7fc173b66f3dde5375e" region="cpu1" offset="0"/>
+		<rom name="g02" size="65536" crc="86d931bf" sha1="8bf7c7a7c01561568973d01956e5398bbc9c3463" region="cpu2" offset="0"/>
+		<rom name="g03" size="65536" crc="eb544ab9" sha1="433af63feb4c4ef0e3bd383f2f9bc19e436fb103" region="cpu3" offset="0"/>
+		<rom name="guprom.3" size="1024" crc="090236a3" sha1="40d066e34291492c6baf8c120657e3d547274b59" region="proms" offset="0"/>
+		<rom name="guprom.2" size="1024" crc="9147de69" sha1="e4b3b546e429c195e82f97322e2a295882e38a58" region="proms" offset="400"/>
+		<rom name="guprom.1" size="1024" crc="7f9c839e" sha1="2fa60fa335f76891d961c9bd0066fa7f82f76779" region="proms" offset="800"/>
+		<rom name="g05" size="32768" crc="80f73e2e" sha1="820824fb10f7dfec6247b46dde8ff7124bde3734" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="g06" size="65536" crc="f1dcdaef" sha1="d9b65e7f4025787037628528d3bef699be2eb874" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="g07" size="65536" crc="326e4e5e" sha1="6935429925d748bb43072429db0d3b08ffdbc95d" region="gfx2" dispose="yes" offset="10000"/>
+		<rom name="g08" size="65536" crc="0aa70967" sha1="a6cbadbb960280b5e79660c0bbd43089ced39a44" region="gfx2" dispose="yes" offset="20000"/>
+		<rom name="g09" size="65536" crc="b7686336" sha1="d654d282862ff00488be38fb9c1302c8bb6f7e7c" region="gfx2" dispose="yes" offset="30000"/>
+		<rom name="g10" size="65536" crc="58600f7d" sha1="3dcd25d1ed07e6f74f3316ebe41768eb155f4c45" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="g11" size="65536" crc="a3f9b463" sha1="ee83d18cf08972c792b05c277b1ca25d732e294d" region="gfx3" dispose="yes" offset="10000"/>
+		<rom name="g12" size="65536" crc="092501be" sha1="85d9a8922dde6824805a4b8e6c52b2a9ad092df9" region="gfx3" dispose="yes" offset="20000"/>
+		<rom name="g13" size="65536" crc="25801ea6" sha1="1aa61716d6be399a1eee2ee5079f13da0f1bd4e8" region="gfx3" dispose="yes" offset="30000"/>
+		<rom name="g20" size="65536" crc="2b46edff" sha1="db97e042621dcbedfeed71937ead6d715899d4f7" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="g21" size="65536" crc="be19888d" sha1="bc7b1b6236d41685faacc2008d51ae2da9a82909" region="gfx4" dispose="yes" offset="10000"/>
+		<rom name="g18" size="65536" crc="2d653f0c" sha1="99eb7883822b10f61b6e922c0d0519aacac83732" region="gfx4" dispose="yes" offset="20000"/>
+		<rom name="g19" size="65536" crc="ebbf3ba2" sha1="bc3631c43058faf1ec6b21ed8017b744afee6f5d" region="gfx4" dispose="yes" offset="30000"/>
+		<rom name="g16" size="65536" crc="aeb3707f" sha1="58d1a71cf83ab0f5f0dd67d441edbc8ece8c2ba5" region="gfx4" dispose="yes" offset="40000"/>
+		<rom name="g17" size="65536" crc="0808f95f" sha1="f67763cceb287a02e3b946ade52105a72161e540" region="gfx4" dispose="yes" offset="50000"/>
+		<rom name="g14" size="65536" crc="8dfc7b87" sha1="e3d75020aa1b90f12633f6515a0386f87441b225" region="gfx4" dispose="yes" offset="60000"/>
+		<rom name="g15" size="65536" crc="06822aac" sha1="630d438cbebe0b5af571948d0d3f4996f52aae1d" region="gfx4" dispose="yes" offset="70000"/>
+		<rom name="g04" size="65536" crc="2255f8dd" sha1="fac31b617762d0fa39cf82a658be250b91ab73ce" region="sound1" offset="0"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<chip type="audio" name="Y8950" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="224" height="384" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="dial" buttons="2" coins="2" service="yes"/>
+		<dipswitch name="Allow Continue">
+			<dipvalue name="No"/>
+			<dipvalue name="Yes" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Flip Screen">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; 2nd only" default="yes"/>
+			<dipvalue name="1st &amp; every 2nd"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coin A">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Coin B">
+			<dipvalue name="1 Coin/2 Credits" default="yes"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy"/>
+			<dipvalue name="Normal" default="yes"/>
+			<dipvalue name="Hard"/>
+			<dipvalue name="Hardest"/>
+		</dipswitch>
+		<dipswitch name="Demo Sounds">
+			<dipvalue name="Off"/>
+			<dipvalue name="On" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Freeze">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="30k 60k" default="yes"/>
+			<dipvalue name="40k 80k"/>
+			<dipvalue name="50k 100k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+	<game name="gwarj" cloneof="gwar" romof="gwar">
+		<description>Guevara (Japan)</description>
+		<year>1987</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="7y3047" size="65536" crc="7f8a880c" sha1="1eb1c3eb45aa933118e5bd116eb3f81f39063ae3" region="cpu1" offset="0"/>
+		<rom name="g02" merge="g02" size="65536" crc="86d931bf" sha1="8bf7c7a7c01561568973d01956e5398bbc9c3463" region="cpu2" offset="0"/>
+		<rom name="g03" merge="g03" size="65536" crc="eb544ab9" sha1="433af63feb4c4ef0e3bd383f2f9bc19e436fb103" region="cpu3" offset="0"/>
+		<rom name="guprom.3" merge="guprom.3" size="1024" crc="090236a3" sha1="40d066e34291492c6baf8c120657e3d547274b59" region="proms" offset="0"/>
+		<rom name="guprom.2" merge="guprom.2" size="1024" crc="9147de69" sha1="e4b3b546e429c195e82f97322e2a295882e38a58" region="proms" offset="400"/>
+		<rom name="guprom.1" merge="guprom.1" size="1024" crc="7f9c839e" sha1="2fa60fa335f76891d961c9bd0066fa7f82f76779" region="proms" offset="800"/>
+		<rom name="792001" size="32768" crc="99d7ddf3" sha1="4e4bc400d184e1fb9d0af3a33cc6f6d099bb3bee" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="g06" merge="g06" size="65536" crc="f1dcdaef" sha1="d9b65e7f4025787037628528d3bef699be2eb874" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="g07" merge="g07" size="65536" crc="326e4e5e" sha1="6935429925d748bb43072429db0d3b08ffdbc95d" region="gfx2" dispose="yes" offset="10000"/>
+		<rom name="g08" merge="g08" size="65536" crc="0aa70967" sha1="a6cbadbb960280b5e79660c0bbd43089ced39a44" region="gfx2" dispose="yes" offset="20000"/>
+		<rom name="g09" merge="g09" size="65536" crc="b7686336" sha1="d654d282862ff00488be38fb9c1302c8bb6f7e7c" region="gfx2" dispose="yes" offset="30000"/>
+		<rom name="g10" merge="g10" size="65536" crc="58600f7d" sha1="3dcd25d1ed07e6f74f3316ebe41768eb155f4c45" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="g11" merge="g11" size="65536" crc="a3f9b463" sha1="ee83d18cf08972c792b05c277b1ca25d732e294d" region="gfx3" dispose="yes" offset="10000"/>
+		<rom name="g12" merge="g12" size="65536" crc="092501be" sha1="85d9a8922dde6824805a4b8e6c52b2a9ad092df9" region="gfx3" dispose="yes" offset="20000"/>
+		<rom name="g13" merge="g13" size="65536" crc="25801ea6" sha1="1aa61716d6be399a1eee2ee5079f13da0f1bd4e8" region="gfx3" dispose="yes" offset="30000"/>
+		<rom name="g20" merge="g20" size="65536" crc="2b46edff" sha1="db97e042621dcbedfeed71937ead6d715899d4f7" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="g21" merge="g21" size="65536" crc="be19888d" sha1="bc7b1b6236d41685faacc2008d51ae2da9a82909" region="gfx4" dispose="yes" offset="10000"/>
+		<rom name="g18" merge="g18" size="65536" crc="2d653f0c" sha1="99eb7883822b10f61b6e922c0d0519aacac83732" region="gfx4" dispose="yes" offset="20000"/>
+		<rom name="g19" merge="g19" size="65536" crc="ebbf3ba2" sha1="bc3631c43058faf1ec6b21ed8017b744afee6f5d" region="gfx4" dispose="yes" offset="30000"/>
+		<rom name="g16" merge="g16" size="65536" crc="aeb3707f" sha1="58d1a71cf83ab0f5f0dd67d441edbc8ece8c2ba5" region="gfx4" dispose="yes" offset="40000"/>
+		<rom name="g17" merge="g17" size="65536" crc="0808f95f" sha1="f67763cceb287a02e3b946ade52105a72161e540" region="gfx4" dispose="yes" offset="50000"/>
+		<rom name="g14" merge="g14" size="65536" crc="8dfc7b87" sha1="e3d75020aa1b90f12633f6515a0386f87441b225" region="gfx4" dispose="yes" offset="60000"/>
+		<rom name="g15" merge="g15" size="65536" crc="06822aac" sha1="630d438cbebe0b5af571948d0d3f4996f52aae1d" region="gfx4" dispose="yes" offset="70000"/>
+		<rom name="g04" merge="g04" size="65536" crc="2255f8dd" sha1="fac31b617762d0fa39cf82a658be250b91ab73ce" region="sound1" offset="0"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<chip type="audio" name="Y8950" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="224" height="384" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="dial" buttons="2" coins="2" service="yes"/>
+		<dipswitch name="Allow Continue">
+			<dipvalue name="No"/>
+			<dipvalue name="Yes" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Flip Screen">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; 2nd only" default="yes"/>
+			<dipvalue name="1st &amp; every 2nd"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coin A">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Coin B">
+			<dipvalue name="1 Coin/2 Credits" default="yes"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy"/>
+			<dipvalue name="Normal" default="yes"/>
+			<dipvalue name="Hard"/>
+			<dipvalue name="Hardest"/>
+		</dipswitch>
+		<dipswitch name="Demo Sounds">
+			<dipvalue name="Off"/>
+			<dipvalue name="On" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Freeze">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="30k 60k" default="yes"/>
+			<dipvalue name="40k 80k"/>
+			<dipvalue name="50k 100k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+	<game name="gwara" cloneof="gwar" romof="gwar">
+		<description>Guerrilla War (Version 1)</description>
+		<year>1987</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="gv3" size="65536" crc="24936d83" sha1="33842322ead66e426946c6cfaa04e56afea90d78" region="cpu1" offset="0"/>
+		<rom name="gv4" size="65536" crc="26335a55" sha1="de3e7d9e204a969745367aa37326d7b3e28c7424" region="cpu2" offset="0"/>
+		<rom name="gv2" size="65536" crc="896682dd" sha1="dc2125c2378a01291197b2798a5eef6459cf5b99" region="cpu3" offset="0"/>
+		<rom name="guprom.3" merge="guprom.3" size="1024" crc="090236a3" sha1="40d066e34291492c6baf8c120657e3d547274b59" region="proms" offset="0"/>
+		<rom name="guprom.2" merge="guprom.2" size="1024" crc="9147de69" sha1="e4b3b546e429c195e82f97322e2a295882e38a58" region="proms" offset="400"/>
+		<rom name="guprom.1" merge="guprom.1" size="1024" crc="7f9c839e" sha1="2fa60fa335f76891d961c9bd0066fa7f82f76779" region="proms" offset="800"/>
+		<rom name="g05" merge="g05" size="32768" crc="80f73e2e" sha1="820824fb10f7dfec6247b46dde8ff7124bde3734" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="g06" merge="g06" size="65536" crc="f1dcdaef" sha1="d9b65e7f4025787037628528d3bef699be2eb874" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="g07" merge="g07" size="65536" crc="326e4e5e" sha1="6935429925d748bb43072429db0d3b08ffdbc95d" region="gfx2" dispose="yes" offset="10000"/>
+		<rom name="g08" merge="g08" size="65536" crc="0aa70967" sha1="a6cbadbb960280b5e79660c0bbd43089ced39a44" region="gfx2" dispose="yes" offset="20000"/>
+		<rom name="g09" merge="g09" size="65536" crc="b7686336" sha1="d654d282862ff00488be38fb9c1302c8bb6f7e7c" region="gfx2" dispose="yes" offset="30000"/>
+		<rom name="g10" merge="g10" size="65536" crc="58600f7d" sha1="3dcd25d1ed07e6f74f3316ebe41768eb155f4c45" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="g11" merge="g11" size="65536" crc="a3f9b463" sha1="ee83d18cf08972c792b05c277b1ca25d732e294d" region="gfx3" dispose="yes" offset="10000"/>
+		<rom name="g12" merge="g12" size="65536" crc="092501be" sha1="85d9a8922dde6824805a4b8e6c52b2a9ad092df9" region="gfx3" dispose="yes" offset="20000"/>
+		<rom name="g13" merge="g13" size="65536" crc="25801ea6" sha1="1aa61716d6be399a1eee2ee5079f13da0f1bd4e8" region="gfx3" dispose="yes" offset="30000"/>
+		<rom name="g20" merge="g20" size="65536" crc="2b46edff" sha1="db97e042621dcbedfeed71937ead6d715899d4f7" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="g21" merge="g21" size="65536" crc="be19888d" sha1="bc7b1b6236d41685faacc2008d51ae2da9a82909" region="gfx4" dispose="yes" offset="10000"/>
+		<rom name="g18" merge="g18" size="65536" crc="2d653f0c" sha1="99eb7883822b10f61b6e922c0d0519aacac83732" region="gfx4" dispose="yes" offset="20000"/>
+		<rom name="g19" merge="g19" size="65536" crc="ebbf3ba2" sha1="bc3631c43058faf1ec6b21ed8017b744afee6f5d" region="gfx4" dispose="yes" offset="30000"/>
+		<rom name="g16" merge="g16" size="65536" crc="aeb3707f" sha1="58d1a71cf83ab0f5f0dd67d441edbc8ece8c2ba5" region="gfx4" dispose="yes" offset="40000"/>
+		<rom name="g17" merge="g17" size="65536" crc="0808f95f" sha1="f67763cceb287a02e3b946ade52105a72161e540" region="gfx4" dispose="yes" offset="50000"/>
+		<rom name="g14" merge="g14" size="65536" crc="8dfc7b87" sha1="e3d75020aa1b90f12633f6515a0386f87441b225" region="gfx4" dispose="yes" offset="60000"/>
+		<rom name="g15" merge="g15" size="65536" crc="06822aac" sha1="630d438cbebe0b5af571948d0d3f4996f52aae1d" region="gfx4" dispose="yes" offset="70000"/>
+		<rom name="g04" merge="g04" size="65536" crc="2255f8dd" sha1="fac31b617762d0fa39cf82a658be250b91ab73ce" region="sound1" offset="0"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<chip type="audio" name="Y8950" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="224" height="384" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="dial" buttons="2" coins="2" service="yes"/>
+		<dipswitch name="Allow Continue">
+			<dipvalue name="No"/>
+			<dipvalue name="Yes" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Flip Screen">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; 2nd only" default="yes"/>
+			<dipvalue name="1st &amp; every 2nd"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coin A">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Coin B">
+			<dipvalue name="1 Coin/2 Credits" default="yes"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy"/>
+			<dipvalue name="Normal" default="yes"/>
+			<dipvalue name="Hard"/>
+			<dipvalue name="Hardest"/>
+		</dipswitch>
+		<dipswitch name="Demo Sounds">
+			<dipvalue name="Off"/>
+			<dipvalue name="On" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Freeze">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="30k 60k" default="yes"/>
+			<dipvalue name="40k 80k"/>
+			<dipvalue name="50k 100k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+	<game name="gwarb" cloneof="gwar" romof="gwar">
+		<description>Guerrilla War (bootleg)</description>
+		<year>1987</year>
+		<manufacturer>bootleg</manufacturer>
+		<rom name="g01" size="65536" crc="ce1d3c80" sha1="605ada3529d0b26425e6c573c31117249bb7a7db" region="cpu1" offset="0"/>
+		<rom name="g02" merge="g02" size="65536" crc="86d931bf" sha1="8bf7c7a7c01561568973d01956e5398bbc9c3463" region="cpu2" offset="0"/>
+		<rom name="g03" merge="g03" size="65536" crc="eb544ab9" sha1="433af63feb4c4ef0e3bd383f2f9bc19e436fb103" region="cpu3" offset="0"/>
+		<rom name="guprom.3" merge="guprom.3" size="1024" crc="090236a3" sha1="40d066e34291492c6baf8c120657e3d547274b59" region="proms" offset="0"/>
+		<rom name="guprom.2" merge="guprom.2" size="1024" crc="9147de69" sha1="e4b3b546e429c195e82f97322e2a295882e38a58" region="proms" offset="400"/>
+		<rom name="guprom.1" merge="guprom.1" size="1024" crc="7f9c839e" sha1="2fa60fa335f76891d961c9bd0066fa7f82f76779" region="proms" offset="800"/>
+		<rom name="g05" merge="g05" size="32768" crc="80f73e2e" sha1="820824fb10f7dfec6247b46dde8ff7124bde3734" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="g06" merge="g06" size="65536" crc="f1dcdaef" sha1="d9b65e7f4025787037628528d3bef699be2eb874" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="g07" merge="g07" size="65536" crc="326e4e5e" sha1="6935429925d748bb43072429db0d3b08ffdbc95d" region="gfx2" dispose="yes" offset="10000"/>
+		<rom name="g08" merge="g08" size="65536" crc="0aa70967" sha1="a6cbadbb960280b5e79660c0bbd43089ced39a44" region="gfx2" dispose="yes" offset="20000"/>
+		<rom name="g09" merge="g09" size="65536" crc="b7686336" sha1="d654d282862ff00488be38fb9c1302c8bb6f7e7c" region="gfx2" dispose="yes" offset="30000"/>
+		<rom name="g10" merge="g10" size="65536" crc="58600f7d" sha1="3dcd25d1ed07e6f74f3316ebe41768eb155f4c45" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="g11" merge="g11" size="65536" crc="a3f9b463" sha1="ee83d18cf08972c792b05c277b1ca25d732e294d" region="gfx3" dispose="yes" offset="10000"/>
+		<rom name="g12" merge="g12" size="65536" crc="092501be" sha1="85d9a8922dde6824805a4b8e6c52b2a9ad092df9" region="gfx3" dispose="yes" offset="20000"/>
+		<rom name="g13" merge="g13" size="65536" crc="25801ea6" sha1="1aa61716d6be399a1eee2ee5079f13da0f1bd4e8" region="gfx3" dispose="yes" offset="30000"/>
+		<rom name="g20" merge="g20" size="65536" crc="2b46edff" sha1="db97e042621dcbedfeed71937ead6d715899d4f7" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="g21" merge="g21" size="65536" crc="be19888d" sha1="bc7b1b6236d41685faacc2008d51ae2da9a82909" region="gfx4" dispose="yes" offset="10000"/>
+		<rom name="g18" merge="g18" size="65536" crc="2d653f0c" sha1="99eb7883822b10f61b6e922c0d0519aacac83732" region="gfx4" dispose="yes" offset="20000"/>
+		<rom name="g19" merge="g19" size="65536" crc="ebbf3ba2" sha1="bc3631c43058faf1ec6b21ed8017b744afee6f5d" region="gfx4" dispose="yes" offset="30000"/>
+		<rom name="g16" merge="g16" size="65536" crc="aeb3707f" sha1="58d1a71cf83ab0f5f0dd67d441edbc8ece8c2ba5" region="gfx4" dispose="yes" offset="40000"/>
+		<rom name="g17" merge="g17" size="65536" crc="0808f95f" sha1="f67763cceb287a02e3b946ade52105a72161e540" region="gfx4" dispose="yes" offset="50000"/>
+		<rom name="g14" merge="g14" size="65536" crc="8dfc7b87" sha1="e3d75020aa1b90f12633f6515a0386f87441b225" region="gfx4" dispose="yes" offset="60000"/>
+		<rom name="g15" merge="g15" size="65536" crc="06822aac" sha1="630d438cbebe0b5af571948d0d3f4996f52aae1d" region="gfx4" dispose="yes" offset="70000"/>
+		<rom name="g04" merge="g04" size="65536" crc="2255f8dd" sha1="fac31b617762d0fa39cf82a658be250b91ab73ce" region="sound1" offset="0"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<chip type="audio" name="Y8950" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="224" height="384" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="dial" buttons="2" coins="2" service="yes"/>
+		<dipswitch name="Allow Continue">
+			<dipvalue name="No"/>
+			<dipvalue name="Yes" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Flip Screen">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; 2nd only" default="yes"/>
+			<dipvalue name="1st &amp; every 2nd"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coin A">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Coin B">
+			<dipvalue name="1 Coin/2 Credits" default="yes"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy"/>
+			<dipvalue name="Normal" default="yes"/>
+			<dipvalue name="Hard"/>
+			<dipvalue name="Hardest"/>
+		</dipswitch>
+		<dipswitch name="Demo Sounds">
+			<dipvalue name="Off"/>
+			<dipvalue name="On" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Freeze">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="30k 60k" default="yes"/>
+			<dipvalue name="40k 80k"/>
+			<dipvalue name="50k 100k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+</mame>	
