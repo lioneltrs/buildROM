@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<mame>
+	<game name="marvins">
+		<description>Marvin's Maze</description>
+		<year>1983</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="pa1" size="8192" crc="0008d791" sha1="6ffb174b2d680314f74efeef83da9f3ee3e0c753" region="cpu1" offset="0"/>
+		<rom name="pa2" size="8192" crc="9457003c" sha1="05ecd5c638a12163e2a65bdfcc09875618f792e1" region="cpu1" offset="2000"/>
+		<rom name="pa3" size="8192" crc="54c33ecb" sha1="cfbf9ffc125fbc51f2abef180f36781f9e748bbd" region="cpu1" offset="4000"/>
+		<rom name="pb1" size="8192" crc="3b6941a5" sha1="9c29870196eaed87f34456fdb06bf7b69c8f489d" region="cpu2" offset="0"/>
+		<rom name="m1" size="8192" crc="2314c696" sha1="1b84a0c82a4dcff648752f53aa1f0abf5357c5d1" region="cpu3" offset="0"/>
+		<rom name="m2" size="8192" crc="74ba5799" sha1="c278b0e5c4134f6077d4ae7b51e3c5cba28af1a8" region="cpu3" offset="2000"/>
+		<rom name="s1" size="8192" crc="327f70f3" sha1="078dcc6b4697617d4d833ccd59c6a543b2a88d9e" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="b1" size="8192" crc="e528bc60" sha1="3365ac7cbc57739054bc11e68831be87c0c1a97a" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="b2" size="8192" crc="e528bc60" sha1="3365ac7cbc57739054bc11e68831be87c0c1a97a" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="f3" size="8192" crc="e55c9b83" sha1="04b0d99955e4b11820015b7721ac6399a3d5a829" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="f2" size="8192" crc="8fc2b081" sha1="fb345965375cb62ec1b947d6c6d071380dc0f395" region="gfx4" dispose="yes" offset="2000"/>
+		<rom name="f1" size="8192" crc="0bd6b4e5" sha1="c56747ff2135db734f1b5f6c2906de5ac8f53bbc" region="gfx4" dispose="yes" offset="4000"/>
+		<rom name="marvmaze.j1" size="1024" crc="92f5b06d" sha1="97979ffb6fb065d9c99da43173180fefb2de1886" region="proms" offset="0"/>
+		<rom name="marvmaze.j2" size="1024" crc="d2b25665" sha1="b913b8b9c5ee0a29b5a115b2432c5706979059cf" region="proms" offset="400"/>
+		<rom name="marvmaze.j3" size="1024" crc="df9e6005" sha1="8f633f664c3f8e4f6ca94bee74a68c8fda8873e3" region="proms" offset="800"/>
+		<chip type="cpu" name="Z80" clock="3360000"/>
+		<chip type="cpu" name="Z80" clock="3360000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="AY-3-8910" clock="2000000"/>
+		<chip type="audio" name="AY-3-8910" clock="2000000"/>
+		<chip type="audio" name="Namco"/>
+		<video screen="raster" orientation="vertical" width="224" height="288" aspectx="3" aspecty="4" refresh="60.606060"/>
+		<sound channels="1"/>
+		<input players="2" control="joy8way" buttons="1" coins="2"/>
+		<dipswitch name="Lives">
+			<dipvalue name="1"/>
+			<dipvalue name="2"/>
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Infinite Lives">
+		</dipswitch>
+		<dipswitch name="Coinage">
+			<dipvalue name="5 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+			<dipvalue name="1 Coin/2 Credits"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/5 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Free Play">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Freeze">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="1st Bonus Life">
+			<dipvalue name="10000" default="yes"/>
+			<dipvalue name="20000"/>
+			<dipvalue name="30000"/>
+			<dipvalue name="40000"/>
+			<dipvalue name="50000"/>
+			<dipvalue name="60000"/>
+			<dipvalue name="70000"/>
+			<dipvalue name="80000"/>
+		</dipswitch>
+		<dipswitch name="2nd Bonus Life">
+			<dipvalue name="1st bonus*2" default="yes"/>
+			<dipvalue name="1st bonus*3"/>
+			<dipvalue name="1st bonus*4"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Demo Sounds">
+			<dipvalue name="Off"/>
+			<dipvalue name="On" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Cabinet">
+			<dipvalue name="Upright" default="yes"/>
+			<dipvalue name="Cocktail"/>
+		</dipswitch>
+		<dipswitch name="Flip Screen">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="288"/>
+	</game>
+</mame>	
