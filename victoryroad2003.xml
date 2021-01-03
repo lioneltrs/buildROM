@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<mame>
+	<game name="victroad">
+		<description>Victory Road</description>
+		<year>1986</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="p1" size="65536" crc="e334acef" sha1="f6d8da554276abbe5579c92eea46591a92623f6e" region="cpu1" offset="0"/>
+		<rom name="p2" size="65536" crc="907fac83" sha1="691d95f95ef7a308c7f5e7defb20971b54423745" region="cpu2" offset="0"/>
+		<rom name="p3" size="65536" crc="bac745f6" sha1="c118d94aff16cbf1b85615ff5a93292f6e98c149" region="cpu3" offset="0"/>
+		<rom name="mb7122e.1k" size="1024" crc="491ab831" sha1="2801d68d8a7fddaca5c48f09d421fc48ff53d244" region="proms" offset="0"/>
+		<rom name="mb7122e.2l" size="1024" crc="8feca424" sha1="c3d666f4b4b914199b24ded02f9a1b643bf90d26" region="proms" offset="400"/>
+		<rom name="mb7122e.1l" size="1024" crc="220076ca" sha1="a353c770c0ffb1105fb93c97977597ad2fda8ac8" region="proms" offset="800"/>
+		<rom name="p7" size="16384" crc="2b6ed95b" sha1="dddf3aa21776778153572a20d29d47928a7116d8" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="p17" size="32768" crc="19d4518c" sha1="133ac6e3d75af6cfc9aa9d1d467f16696c7f3794" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="p18" size="32768" crc="d818be43" sha1="274827b13e8572f68302b7e0b5964d3e32544303" region="gfx2" dispose="yes" offset="8000"/>
+		<rom name="p19" size="32768" crc="d64e0f89" sha1="41204d5b0bc9d2f2599c3e881f10b73bddae3c5c" region="gfx2" dispose="yes" offset="10000"/>
+		<rom name="p20" size="32768" crc="edba0f31" sha1="b3fc886d3cf7a34b470dd72cc0268a193f9a64d7" region="gfx2" dispose="yes" offset="18000"/>
+		<rom name="p8" size="32768" crc="df7f252a" sha1="435aade99144c9be51f65d76583256aa089cce78" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="p9" size="32768" crc="9897bc05" sha1="ec181dc64dd78ff2fab193509743376ab192b99e" region="gfx3" dispose="yes" offset="8000"/>
+		<rom name="p10" size="32768" crc="ecd3c0ea" sha1="f398b6a64706fcaa727ff1c150e05888091cb77c" region="gfx3" dispose="yes" offset="10000"/>
+		<rom name="p11" size="32768" crc="668b25a4" sha1="235423e3b442271581dde0195fdff2a37596a9bc" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="p14" size="32768" crc="a7031d4a" sha1="9ea184990372909de7d8fe0891bb3e0441b13f90" region="gfx4" dispose="yes" offset="8000"/>
+		<rom name="p12" size="32768" crc="f44e95fa" sha1="6633bd1e9e947cae5ba696f6fd393bf0cd7969b0" region="gfx4" dispose="yes" offset="10000"/>
+		<rom name="p15" size="32768" crc="120d2450" sha1="8699db76f598e7719fa5f9a3dcc07d24c53e5da4" region="gfx4" dispose="yes" offset="18000"/>
+		<rom name="p13" size="32768" crc="980ca3d8" sha1="bda6f19edf43c61c0c8d2235bb60def76c801b87" region="gfx4" dispose="yes" offset="20000"/>
+		<rom name="p16" size="32768" crc="9f820e8a" sha1="2be0128d6861241f6a9c5a7032368dbc6d57b44e" region="gfx4" dispose="yes" offset="28000"/>
+		<rom name="p4" size="65536" crc="e10fb8cc" sha1="591aa1f947216795252dc4d9ec2600ef63dada7d" region="sound1" offset="0"/>
+		<rom name="p5" size="65536" crc="93e5f110" sha1="065a78805e50ce6a48cb7930f264bada236feb13" region="sound1" offset="10000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<chip type="audio" name="Y8950" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="216" height="288" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="dial" buttons="2" coins="2"/>
+		<dipswitch name="Kill friend &amp; walk everywhere">
+		</dipswitch>
+		<dipswitch name="P1 &amp; P2 Fire Buttons">
+			<dipvalue name="Separate" default="yes"/>
+			<dipvalue name="Common"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; every 2nd" default="yes"/>
+			<dipvalue name="1st &amp; 2nd only"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coin A">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Coin B">
+			<dipvalue name="1 Coin/2 Credits" default="yes"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy"/>
+			<dipvalue name="Normal" default="yes"/>
+			<dipvalue name="Hard"/>
+			<dipvalue name="Hardest"/>
+		</dipswitch>
+		<dipswitch name="Game Mode">
+			<dipvalue name="Demo Sounds Off"/>
+			<dipvalue name="Demo Sounds On" default="yes"/>
+			<dipvalue name="Freeze"/>
+			<dipvalue name="Infinite Lives"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="50k 100k" default="yes"/>
+			<dipvalue name="60k 120k"/>
+			<dipvalue name="100k 200k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Allow Continue">
+			<dipvalue name="No"/>
+			<dipvalue name="Yes" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off"/>
+			<dipvalue name="On" default="yes"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+	<game name="dogosoke" cloneof="victroad" romof="victroad">
+		<description>Dogou Souken</description>
+		<year>1986</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="up03_p4.rom" size="65536" crc="37867ad2" sha1="4444e428eb7126451f34351b1a2bc193484ca641" region="cpu1" offset="0"/>
+		<rom name="p2" merge="p2" size="65536" crc="907fac83" sha1="691d95f95ef7a308c7f5e7defb20971b54423745" region="cpu2" offset="0"/>
+		<rom name="up03_k7.rom" size="65536" crc="173fa571" sha1="fb9c783e5377fa86f70afee6804c8ee9061b27fd" region="cpu3" offset="0"/>
+		<rom name="up03_k1.rom" size="1024" crc="10a2ce2b" sha1="8de93250b81fbabb012c96454ef3a888b2783ab5" region="proms" offset="0"/>
+		<rom name="up03_l2.rom" size="1024" crc="99dc9792" sha1="dcdcea2bad524776e17eaeb70dd4882283f1b125" region="proms" offset="400"/>
+		<rom name="up03_l1.rom" size="1024" crc="e7213160" sha1="bc762a346e1639c8a9636fe85c18d68a08c1b586" region="proms" offset="800"/>
+		<rom name="up02_b3.rom" size="16384" crc="51a4ec83" sha1="8cb743c68a51b71ef3d78127b2cf6ab0877b13f6" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="p17" merge="p17" size="32768" crc="19d4518c" sha1="133ac6e3d75af6cfc9aa9d1d467f16696c7f3794" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="p18" merge="p18" size="32768" crc="d818be43" sha1="274827b13e8572f68302b7e0b5964d3e32544303" region="gfx2" dispose="yes" offset="8000"/>
+		<rom name="p19" merge="p19" size="32768" crc="d64e0f89" sha1="41204d5b0bc9d2f2599c3e881f10b73bddae3c5c" region="gfx2" dispose="yes" offset="10000"/>
+		<rom name="p20" merge="p20" size="32768" crc="edba0f31" sha1="b3fc886d3cf7a34b470dd72cc0268a193f9a64d7" region="gfx2" dispose="yes" offset="18000"/>
+		<rom name="up02_d3.rom" size="32768" crc="d43044f8" sha1="4d5bc3730ea1bb1978ae246745416b71979cb100" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="up02_e3.rom" size="32768" crc="365ed2d8" sha1="e0f600c936483e3d0d03709ae709321d072145bd" region="gfx3" dispose="yes" offset="8000"/>
+		<rom name="up02_g3.rom" size="32768" crc="92579bf3" sha1="eb2084bf5c62cbbf08dc25997702f8e8eb3dcc5d" region="gfx3" dispose="yes" offset="10000"/>
+		<rom name="p11" merge="p11" size="32768" crc="668b25a4" sha1="235423e3b442271581dde0195fdff2a37596a9bc" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="p14" merge="p14" size="32768" crc="a7031d4a" sha1="9ea184990372909de7d8fe0891bb3e0441b13f90" region="gfx4" dispose="yes" offset="8000"/>
+		<rom name="p12" merge="p12" size="32768" crc="f44e95fa" sha1="6633bd1e9e947cae5ba696f6fd393bf0cd7969b0" region="gfx4" dispose="yes" offset="10000"/>
+		<rom name="p15" merge="p15" size="32768" crc="120d2450" sha1="8699db76f598e7719fa5f9a3dcc07d24c53e5da4" region="gfx4" dispose="yes" offset="18000"/>
+		<rom name="p13" merge="p13" size="32768" crc="980ca3d8" sha1="bda6f19edf43c61c0c8d2235bb60def76c801b87" region="gfx4" dispose="yes" offset="20000"/>
+		<rom name="p16" merge="p16" size="32768" crc="9f820e8a" sha1="2be0128d6861241f6a9c5a7032368dbc6d57b44e" region="gfx4" dispose="yes" offset="28000"/>
+		<rom name="up03_f5.rom" size="65536" crc="5b43fe9f" sha1="28f803f633b83b17f9b10516d38c862f90d55ff3" region="sound1" offset="0"/>
+		<rom name="up03_g5.rom" size="65536" crc="aae30cd6" sha1="9d0d2c0f947387a0924bf0ed73de9305c1625054" region="sound1" offset="10000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<chip type="audio" name="Y8950" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="216" height="288" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="dial" buttons="2" coins="2"/>
+		<dipswitch name="Kill friend &amp; walk everywhere">
+		</dipswitch>
+		<dipswitch name="P1 &amp; P2 Fire Buttons">
+			<dipvalue name="Separate" default="yes"/>
+			<dipvalue name="Common"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; every 2nd" default="yes"/>
+			<dipvalue name="1st &amp; 2nd only"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coin A">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Coin B">
+			<dipvalue name="1 Coin/2 Credits" default="yes"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy"/>
+			<dipvalue name="Normal" default="yes"/>
+			<dipvalue name="Hard"/>
+			<dipvalue name="Hardest"/>
+		</dipswitch>
+		<dipswitch name="Game Mode">
+			<dipvalue name="Demo Sounds Off"/>
+			<dipvalue name="Demo Sounds On" default="yes"/>
+			<dipvalue name="Freeze"/>
+			<dipvalue name="Infinite Lives"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="50k 100k" default="yes"/>
+			<dipvalue name="60k 120k"/>
+			<dipvalue name="100k 200k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Allow Continue">
+			<dipvalue name="No"/>
+			<dipvalue name="Yes" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off"/>
+			<dipvalue name="On" default="yes"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+</mame>	
