@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<mame>
+	<game name="paddlema">
+		<description>Paddle Mania</description>
+		<year>1988</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="padlem.6g" size="65536" crc="c227a6e8" sha1="9c98be6e82a0dd76fd5b786601456b060407c57f" region="cpu1" offset="0"/>
+		<rom name="padlem.3g" size="65536" crc="f11a21aa" sha1="6eda9ff99f2aa8832fff1e2a054c5ffb6dae7ae3" region="cpu1" offset="1"/>
+		<rom name="padlem.6h" size="65536" crc="8897555f" sha1="7d30aa56a727700a6e02af92b065ed982a39ccc2" region="cpu1" offset="20000"/>
+		<rom name="padlem.3h" size="65536" crc="f0fe9b9d" sha1="2e7a80dc25c549e57b7698052f53562a9a608205" region="cpu1" offset="20001"/>
+		<rom name="padlem.18c" size="65536" crc="9269778d" sha1="bdc9100827f2e018db943d9f7d81b7936c155bf0" region="cpu2" offset="0"/>
+		<rom name="padlem.16m" size="65536" crc="0984fb4d" sha1="6bc529db93fad277f286e4a380812c40c7f42301" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="padlem.16n" size="65536" crc="4249e047" sha1="9f35b316b5de65f8b1878fca283c9d534bb8ae25" region="gfx1" dispose="yes" offset="10000"/>
+		<rom name="padlem.13m" size="65536" crc="fd9dbc27" sha1="c01f512afef7686c64cc0766c235084cc8e2f5fc" region="gfx1" dispose="yes" offset="20000"/>
+		<rom name="padlem.13n" size="65536" crc="1d460486" sha1="4ade817a036447e7e6d4fe56fa2c5712f198c625" region="gfx1" dispose="yes" offset="30000"/>
+		<rom name="padlem.9m" size="65536" crc="4ee4970d" sha1="d57d9178129236dfb3a18688e8544e5e555ce559" region="gfx1" dispose="yes" offset="40000"/>
+		<rom name="padlem.9n" size="65536" crc="a1756f15" sha1="1220075e34c482e38eead9ea5e63b53b822e87de" region="gfx1" dispose="yes" offset="50000"/>
+		<rom name="padlem.6m" size="65536" crc="3f47910c" sha1="429d425dc57fbd868bc39c3d799bbaebcf313cc0" region="gfx1" dispose="yes" offset="60000"/>
+		<rom name="padlem.6n" size="65536" crc="fe337655" sha1="ac04124642b245d6a530c72d0dea1b1585b5cebd" region="gfx1" dispose="yes" offset="70000"/>
+		<rom name="padlem.a" size="256" crc="cae6bcd6" sha1="da3b3bdcdc7fefae80b0ef8365565bbe5ff0d5d2" region="proms" offset="0"/>
+		<rom name="padlem.b" size="256" crc="b6df8dcb" sha1="318ca20fab6608aa2956ec3bb82e8ae77c250d51" region="proms" offset="100"/>
+		<rom name="padlem.c" size="256" crc="39ca9b86" sha1="8b8d7aae85830e69366e86f8b6cccfb8140cd526" region="proms" offset="200"/>
+		<rom name="padlem.17j" size="1024" crc="86170069" sha1="8e2ad7afa50453e9a2dc89386ce02d10e7c89fbc" region="proms" offset="300"/>
+		<rom name="padlem.16j" size="1024" crc="8da58e2c" sha1="6012715a2d3ba4cf8bc5a8250e7f28cb59913092" region="proms" offset="700"/>
+		<rom name="padlem.18n" size="32768" crc="06506200" sha1="d43337e5611cb0d3432942539ccf04bff2bdd345" region="user1" offset="0"/>
+		<chip type="cpu" name="68000" clock="6000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3812" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="224" height="256" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="4" control="joy8way" buttons="2" coins="2"/>
+		<dipswitch name="Coin B">
+			<dipvalue name="1 Coin/2 Credits" default="yes"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Coin A">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Game Time">
+			<dipvalue name="1:00"/>
+			<dipvalue name="1:10"/>
+			<dipvalue name="1:20"/>
+			<dipvalue name="1:30" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Match Type">
+			<dipvalue name="A to B"/>
+			<dipvalue name="A to C"/>
+			<dipvalue name="A to E" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Service Mode">
+		</dipswitch>
+		<dipswitch name="Unused">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Unused">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Unused">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Game Mode">
+			<dipvalue name="Demo Sounds Off"/>
+			<dipvalue name="Demo Sounds On" default="yes"/>
+			<dipvalue name="Win Match Against CPU"/>
+		</dipswitch>
+		<dipswitch name="Language">
+			<dipvalue name="English" default="yes"/>
+			<dipvalue name="Japanese"/>
+		</dipswitch>
+		<dipswitch name="Allow Continue">
+			<dipvalue name="No"/>
+			<dipvalue name="Yes" default="yes"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="256"/>
+	</game>
+</mame>	
