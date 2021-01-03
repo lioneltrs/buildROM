@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<mame>
+	<game name="athena">
+		<description>Athena</description>
+		<year>1986</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="up02_p4.rom" size="16384" crc="900a113c" sha1="3a85f87cbf79d60f58858df4852d6d97300c9280" region="cpu1" offset="0"/>
+		<rom name="up02_m4.rom" size="32768" crc="61c69474" sha1="93f1222a3908c84fe6679e2deb90afbe4a22e675" region="cpu1" offset="4000"/>
+		<rom name="up02_p8.rom" size="16384" crc="df50af7e" sha1="2a69089aecf598cb11f4f1c9b42d81670f9bd68e" region="cpu2" offset="0"/>
+		<rom name="up02_m8.rom" size="32768" crc="f3c933df" sha1="70a0bf63230be53da9196fae4c3e604205275ddd" region="cpu2" offset="4000"/>
+		<rom name="up02_g6.rom" size="16384" crc="42dbe029" sha1="9aa311860693bd3e73f2b72ca4b171cb95f069ee" region="cpu3" offset="0"/>
+		<rom name="up02_k6.rom" size="32768" crc="596f1c8a" sha1="8f1400c77473c845e57a14fa479cf4f7ac66a909" region="cpu3" offset="4000"/>
+		<rom name="up02_c2.rom" size="1024" crc="294279ae" sha1="b3db5617b83845a6c1abca8f71fa4598758a2a56" region="proms" offset="0"/>
+		<rom name="up02_b1.rom" size="1024" crc="d25c9099" sha1="f3933075cce1255affc61dfefd9559b6e15ed29c" region="proms" offset="400"/>
+		<rom name="up02_c1.rom" size="1024" crc="a4a4e7dc" sha1="aa694c2d44dcabc6cfd46307c55c3759eff57236" region="proms" offset="800"/>
+		<rom name="up01_d2.rom" size="16384" crc="18b4bcca" sha1="2476aa6c8d55e117d840202a97fe2a65e252ad7f" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="up01_b2.rom" size="32768" crc="f269c0eb" sha1="a947c6e4d82e0aafa616d25395ef63c33d9beb06" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="up01_p2.rom" size="32768" crc="c63a871f" sha1="0ab8ebebd750fdcad283eed427179f2124b300ae" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="up01_s2.rom" size="32768" crc="760568d8" sha1="9dc447c446791c79322e21e3caef6ceae347e2fb" region="gfx3" dispose="yes" offset="8000"/>
+		<rom name="up01_t2.rom" size="32768" crc="57b35c73" sha1="6d15b94b50c3734f7d60bd9bd1c5e6c76591d829" region="gfx3" dispose="yes" offset="10000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<video screen="raster" orientation="horizontal" width="288" height="216" aspectx="4" aspecty="3" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="joy8way" buttons="2" coins="2"/>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Cabinet">
+			<dipvalue name="Upright" default="yes"/>
+			<dipvalue name="Cocktail"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; every 2nd" default="yes"/>
+			<dipvalue name="1st &amp; 2nd only"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coin A">
+			<dipvalue name="4 Coins/1 Credit"/>
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Coin B">
+			<dipvalue name="1 Coin/2 Credits" default="yes"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="1 Coin/4 Credits"/>
+			<dipvalue name="1 Coin/6 Credits"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy"/>
+			<dipvalue name="Normal" default="yes"/>
+			<dipvalue name="Hard"/>
+			<dipvalue name="Hardest"/>
+		</dipswitch>
+		<dipswitch name="Demo Sounds">
+			<dipvalue name="Off"/>
+			<dipvalue name="On" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Freeze">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="50k 100k" default="yes"/>
+			<dipvalue name="80k 160k"/>
+			<dipvalue name="100k 200k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Unused">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Energy">
+			<dipvalue name="12" default="yes"/>
+			<dipvalue name="14"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+</mame>	
