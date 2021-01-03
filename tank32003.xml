@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<mame>
+	<game name="tnk3">
+		<description>T.N.K. III (US)</description>
+		<year>1985</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="tnk3-p1.bin" size="16384" crc="0d2a8ca9" sha1="eba950dab044496e8c1c02af20a9d380996ea20a" region="cpu1" offset="0"/>
+		<rom name="tnk3-p2.bin" size="16384" crc="0ae0a483" sha1="6a1ba86da4fd75bfb00855db04eac2727ec4159e" region="cpu1" offset="4000"/>
+		<rom name="tnk3-p3.bin" size="16384" crc="d16dd4db" sha1="dcbc61251c13e11ce3cdd7a5ad200cd2d2758cab" region="cpu1" offset="8000"/>
+		<rom name="tnk3-p4.bin" size="16384" crc="01b45a90" sha1="85ba3b157cd6463c92ed831bb48d38f3a16f9537" region="cpu2" offset="0"/>
+		<rom name="tnk3-p5.bin" size="16384" crc="60db6667" sha1="9c4bb99473c6d9b8ac9086b7364b6278b70757f6" region="cpu2" offset="4000"/>
+		<rom name="tnk3-p6.bin" size="16384" crc="4761fde7" sha1="dadf60e33f5dd8108478ca480bcef6b2624cfca8" region="cpu2" offset="8000"/>
+		<rom name="tnk3-p10.bin" size="16384" crc="7bf0a517" sha1="0197feeaf511ac59f3df8195ec57e947fb08e995" region="cpu3" offset="0"/>
+		<rom name="tnk3-p11.bin" size="16384" crc="0569ce27" sha1="7aa73f57ad97445ce5729f05cd8d24973886dbf5" region="cpu3" offset="4000"/>
+		<rom name="7122.2" size="1024" crc="34c06bc6" sha1="bb68e96a8fcc754840420952dab961e03bf6acdd" region="proms" offset="0"/>
+		<rom name="7122.1" size="1024" crc="6d0ac66a" sha1="e792218ec43dd10473dc020afed8527cf43ea0d0" region="proms" offset="400"/>
+		<rom name="7122.0" size="1024" crc="4662b4c8" sha1="391c2b8a17ce2e092b46a17fc4170dc1e3bde426" region="proms" offset="800"/>
+		<rom name="tnk3-p14.bin" size="8192" crc="1fd18c43" sha1="611b5aa97df84c0117681772deb006f32a899ad3" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="tnk3-p12.bin" size="16384" crc="ff495a16" sha1="e6b97a63efe58018260ff34f0ea4edc81718cb14" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="tnk3-p13.bin" size="16384" crc="f8344843" sha1="c741dc84b48f830f6d4eaa4476f5c2a391153acc" region="gfx2" dispose="yes" offset="4000"/>
+		<rom name="tnk3-p7.bin" size="16384" crc="06b92c88" sha1="b39c2cc4a58937d89f9b0c9093b9742509db64a3" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="tnk3-p8.bin" size="16384" crc="63d0e2eb" sha1="96182639bb620d9692a4c8266130769c44dd29f8" region="gfx3" dispose="yes" offset="8000"/>
+		<rom name="tnk3-p9.bin" size="16384" crc="872e3fac" sha1="98e7e9315fe7ccc51151c67dc60a362a1c2d8372" region="gfx3" dispose="yes" offset="10000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="216" height="288" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="dial" buttons="2" coins="2"/>
+		<dipswitch name="Walk everywhere">
+		</dipswitch>
+		<dipswitch name="Cabinet">
+			<dipvalue name="Upright" default="yes"/>
+			<dipvalue name="Cocktail"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coinage">
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+			<dipvalue name="1 Coin/2 Credits"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="Free Play"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="20k 60k" default="yes"/>
+			<dipvalue name="40k 90k"/>
+			<dipvalue name="50k 120k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; every 2nd" default="yes"/>
+			<dipvalue name="1st &amp; 2nd only"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy?" default="yes"/>
+			<dipvalue name="Normal?"/>
+			<dipvalue name="Hard?"/>
+			<dipvalue name="Hardest?"/>
+		</dipswitch>
+		<dipswitch name="Game Mode">
+			<dipvalue name="Demo Sounds Off"/>
+			<dipvalue name="Demo Sounds On" default="yes"/>
+			<dipvalue name="Freeze"/>
+			<dipvalue name="Infinite Lives"/>
+		</dipswitch>
+		<dipswitch name="Flip Screen">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Allow Continue">
+			<dipvalue name="No"/>
+			<dipvalue name="Yes" default="yes"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+	<game name="tnk3j" cloneof="tnk3" romof="tnk3">
+		<description>T.A.N.K. (Japan)</description>
+		<year>1985</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="p1.4e" size="16384" crc="03aca147" sha1="9ce4cfdfbd22f10e13c8e474dc2e5aa3bfd57e0b" region="cpu1" offset="0"/>
+		<rom name="tnk3-p2.bin" merge="tnk3-p2.bin" size="16384" crc="0ae0a483" sha1="6a1ba86da4fd75bfb00855db04eac2727ec4159e" region="cpu1" offset="4000"/>
+		<rom name="tnk3-p3.bin" merge="tnk3-p3.bin" size="16384" crc="d16dd4db" sha1="dcbc61251c13e11ce3cdd7a5ad200cd2d2758cab" region="cpu1" offset="8000"/>
+		<rom name="tnk3-p4.bin" merge="tnk3-p4.bin" size="16384" crc="01b45a90" sha1="85ba3b157cd6463c92ed831bb48d38f3a16f9537" region="cpu2" offset="0"/>
+		<rom name="tnk3-p5.bin" merge="tnk3-p5.bin" size="16384" crc="60db6667" sha1="9c4bb99473c6d9b8ac9086b7364b6278b70757f6" region="cpu2" offset="4000"/>
+		<rom name="tnk3-p6.bin" merge="tnk3-p6.bin" size="16384" crc="4761fde7" sha1="dadf60e33f5dd8108478ca480bcef6b2624cfca8" region="cpu2" offset="8000"/>
+		<rom name="tnk3-p10.bin" merge="tnk3-p10.bin" size="16384" crc="7bf0a517" sha1="0197feeaf511ac59f3df8195ec57e947fb08e995" region="cpu3" offset="0"/>
+		<rom name="tnk3-p11.bin" merge="tnk3-p11.bin" size="16384" crc="0569ce27" sha1="7aa73f57ad97445ce5729f05cd8d24973886dbf5" region="cpu3" offset="4000"/>
+		<rom name="7122.2" merge="7122.2" size="1024" crc="34c06bc6" sha1="bb68e96a8fcc754840420952dab961e03bf6acdd" region="proms" offset="0"/>
+		<rom name="7122.1" merge="7122.1" size="1024" crc="6d0ac66a" sha1="e792218ec43dd10473dc020afed8527cf43ea0d0" region="proms" offset="400"/>
+		<rom name="7122.0" merge="7122.0" size="1024" crc="4662b4c8" sha1="391c2b8a17ce2e092b46a17fc4170dc1e3bde426" region="proms" offset="800"/>
+		<rom name="p14.1e" size="8192" crc="6bd575ca" sha1="446bb929fa19a7ff8b92731f71ab3e3252899f07" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="tnk3-p12.bin" merge="tnk3-p12.bin" size="16384" crc="ff495a16" sha1="e6b97a63efe58018260ff34f0ea4edc81718cb14" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="tnk3-p13.bin" merge="tnk3-p13.bin" size="16384" crc="f8344843" sha1="c741dc84b48f830f6d4eaa4476f5c2a391153acc" region="gfx2" dispose="yes" offset="4000"/>
+		<rom name="tnk3-p7.bin" merge="tnk3-p7.bin" size="16384" crc="06b92c88" sha1="b39c2cc4a58937d89f9b0c9093b9742509db64a3" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="tnk3-p8.bin" merge="tnk3-p8.bin" size="16384" crc="63d0e2eb" sha1="96182639bb620d9692a4c8266130769c44dd29f8" region="gfx3" dispose="yes" offset="8000"/>
+		<rom name="tnk3-p9.bin" merge="tnk3-p9.bin" size="16384" crc="872e3fac" sha1="98e7e9315fe7ccc51151c67dc60a362a1c2d8372" region="gfx3" dispose="yes" offset="10000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" name="Z80" clock="4000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM3526" clock="4000000"/>
+		<video screen="raster" orientation="vertical" width="216" height="288" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="dial" buttons="2" coins="2"/>
+		<dipswitch name="Walk everywhere">
+		</dipswitch>
+		<dipswitch name="Cabinet">
+			<dipvalue name="Upright" default="yes"/>
+			<dipvalue name="Cocktail"/>
+		</dipswitch>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="5"/>
+		</dipswitch>
+		<dipswitch name="Coinage">
+			<dipvalue name="3 Coins/1 Credit"/>
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+			<dipvalue name="1 Coin/2 Credits"/>
+			<dipvalue name="1 Coin/3 Credits"/>
+			<dipvalue name="Free Play"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="20k 60k" default="yes"/>
+			<dipvalue name="40k 90k"/>
+			<dipvalue name="50k 120k"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Bonus Occurrence">
+			<dipvalue name="1st &amp; every 2nd" default="yes"/>
+			<dipvalue name="1st &amp; 2nd only"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="Easy?" default="yes"/>
+			<dipvalue name="Normal?"/>
+			<dipvalue name="Hard?"/>
+			<dipvalue name="Hardest?"/>
+		</dipswitch>
+		<dipswitch name="Game Mode">
+			<dipvalue name="Demo Sounds Off"/>
+			<dipvalue name="Demo Sounds On" default="yes"/>
+			<dipvalue name="Freeze"/>
+			<dipvalue name="Infinite Lives"/>
+		</dipswitch>
+		<dipswitch name="Flip Screen">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Allow Continue">
+			<dipvalue name="No"/>
+			<dipvalue name="Yes" default="yes"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>
+</mame>	
