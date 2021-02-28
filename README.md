@@ -19,9 +19,9 @@ The games are:
 
 Place all the files in a directory of your choice. The files are:
 
-    go
-    go.py
-    marvinsmaze2003.xml
+	go
+	go.py
+	marvinsmaze2003.xml
 	athena2003.xml
 	guerrillawar2003.xml
 	ikari2003.xml
@@ -46,11 +46,12 @@ Place all the files in a directory of your choice. The files are:
 Choose step 6, 7 or 8:
 
 6. If you only want to extract the files from the mbundle file, use the following commands:
-grep -vw python3 a.txt >a1.txt
+`grep -vw python3 a.txt >a1.txt`
 The file a1.txt should contain the commands to extract the relevant files without converting them to MAME ROMs. You may start the command with:
 `bash a1.txt`
 7. If you only want to convert the files extracted from the mbundle file to ROMS compatible with MAME, use the following command:
 `grep -w python3 a.txt >a1.txt`
+followed by:
 `bash a1.txt`
 8. If you want to extract the files from the mbundle and convert them to ROMS compatible with MAME, use :
 `bash a.txt`
